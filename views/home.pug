@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Website
+link(rel='stylesheet' href='/static/style.css')
+link(rel='stylesheet' media="screen and (max-width: 1134px)" href='/static/tab.css')
+link(rel='stylesheet' media="screen and (max-width: 820px)" href='/static/phone.css')
+.container
+  .myphoto
+    a(href='/')
+      img(src='./static/_DSC0195.jpg' alt='')
+    h2 Sarabjot Singh
+  .panel(style='background-image:url(./static/DSC01053.jpg);')
+    h3
+      a(href='/philosophy') Philosophy
+  .panel(style='background-image:url(./static/dsc.jpg);')
+    h3
+      a(href='/photography') Photography
+  .panel(style='background-image:url(./static/DSC01192.jpg);')
+    h3
+      a(href='') About me
+  .panel(style='background-image:url(./static/DSC006288.jpg);')
+    h3
+      a(href='/books') Books
+
+.nav
+  ul
+    li
+      a(href='https://github.com/ricky-aufvaa') .github.
+    li
+      a(href='https://www.reddit.com/user/Sick__sock') .reddit.
+    li
+      a(href='#') .recognition.
+    li
+      a(href='https://www.linkedin.com/in/sarabjot-singh-93256b22b/') .linkedin.
+script(src='/app.js')

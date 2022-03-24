@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.panel{
+    font-family: 'Anton', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:500%;
+    height: 40vh;
+    position: relative;
+    width: 8vw;
+    margin: 50px;
+    border-radius: 50px;
+    color: white;
+}
+.panel h3{
+    text-align: center;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    margin-top: 20vh;
+}
+
+.myphoto img{
+    height: 200px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10vh;
+    margin-left: 200px;
+}
+.myphoto img:hover{
+    box-shadow: 4px 4px 4px grey;
+    cursor: pointer;
+}
+.myphoto h2{
+    font-family: 'Syne Mono', monospace;
+    margin-left: 200px;
+
+}
+
+
+/* hover */
+.panel:hover{
+    border: 2px solid rgb(73, 73, 73);
+    transition: all ease-in-out 1s ;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px grey;
+animation-name: shake;
+animation-duration: 0.22s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+@keyframes shake{
+    0%{
+background-position: top left;
+}
+100%{
+    background-position: top right;
+}
+}
+
+/* active class */
+.active{
+   border: 2px solid purple;
+   border-radius: 50px;
+   width: 80vw;
+   height: 100vh;
+   
+   background-position: center;
+   position: absolute;
+   top: 0;
+   z-index: 2;
+   left: 10vw;
+   transition: all 0.1s ease-in-out;
+
+   
+}
+.active h3{
+    display: none;
+}
+
+.panel a{
+    color: white;
+    background-color: rgb(36, 33, 33);
+    padding: 5px 5px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.panel a:hover{
+    background-color: transparent;
+}
+.btn{
+    color: white;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    top: 40px;
+    z-index: 5;
+    visibility:hidden;
+    transition: all 2s ease-in-out;
+    outline: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border:  1px solid white;
+}
+
+.nav{
+background-color: rgb(160, 160, 160);
+/* position: absolute; */
+bottom: 0;
+border-start-end-radius: 100px;
+border-start-start-radius: 100px;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* background-color: red; */
+}
+.nav li{
+    list-style: none;
+    margin: 0;
+    padding: 20px 40px;
+
+}
+
+.nav a{
+    text-decoration: none;
+    margin: 2px 5px;
+    color: black;
+    padding: 5px 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover{
+    color: rgb(255, 255, 255);
+    border:2px solid black;
+    border-radius: 30px;
+}
+

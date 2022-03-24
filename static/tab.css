@@ -1,0 +1,61 @@
+body{
+    /* background-color: red; */
+    overflow: scroll;
+    overflow-y: 0;
+    /* flex-direction: row; */
+    
+}
+.container{
+    /* flex-direction: column; */
+}
+.panel{
+    height: 30vh;
+
+}
+.panel h3{
+    /* margin-top: 15vh; */
+    font-size: medium;
+    letter-spacing: 0;
+}
+
+.myphoto img{
+    height: 10rem;
+    
+    
+    margin-top: 8vh;
+    margin-left: 3vh;
+    
+
+}
+.myphoto h2{
+    margin-left: 3vh;
+    font-size: medium;
+}
+.opencontainer img{
+    height: 1rem;
+    
+
+    
+}
+.opencontainer a{
+    margin-left: 10rem;
+}
+.opencontainer h2{
+    margin-left: 10vw;
+}
+.openpanel{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    border-radius: 2rem;
+    overflow: scroll;
+    overflow-y: 0;
+   
+    
+    
+}
+.openphoto img{
+    border-radius: 3rem;
+    height: 8rem;
+    margin: 1rem;
+}
