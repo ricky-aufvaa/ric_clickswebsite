@@ -2,6 +2,7 @@ body{
     /* background-color: red; */
     /* justify-content: space-evenly; */
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 .container{
     display: inline-block;
