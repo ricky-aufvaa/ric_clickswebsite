@@ -89,7 +89,7 @@ body{
     border: 2px solid rgb(73, 73, 73);
     transition: all ease-in-out 1s ;
     cursor:pointer;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 5px grey;
 animation-name: shake;
 animation-duration: 0.22s;
 animation-timing-function: ease-in-out;
@@ -221,27 +221,33 @@ background-position: top left;
     display: flex;
     border-radius: 2rem;
     justify-content: center;
-    /* text-align: center; */
-    overflow: hidden;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
     align-items: center;
     background-size: cover;
     background-position-y: 40%;
     background-repeat: no-repeat;
     transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+    
     
     
 }
 .openpanel:hover{
-    box-shadow: 10px 10px 10px grey, -20px -20px 20px grey;
+    box-shadow: 5px 5px 5px grey, -10px -10px 10px grey;
 }
 
 .opencontainer .text{
-    position: absolute;
+    /* position: relative; */
     color: white;
     text-align: center;
     margin: 2rem 2rem;
     border-radius: 3rem;
+    margin-top: 60vh;
     display: flex;
+    
+    
     flex-flow: wrap column;
     font-weight: bolder;
     /* justify-content: center;
@@ -249,6 +255,7 @@ background-position: top left;
     /* width: 20%; */
     /* height: 2%; */
     font-size: medium;
+    /* overflow: scroll; */
     
     
     /* background-color: aquamarine; */
@@ -278,6 +285,9 @@ background-position: top left;
 .openphoto{
     display: flex;
     flex-flow: wrap row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
 
 
 }
@@ -287,6 +297,11 @@ background-position: top left;
     margin: 2rem;
     transition: all 0.2s ease-in-out;
 }
+.openphoto a{
+    margin-left: 0;
+    
+}
+
 
 .openphoto img:hover{
     box-shadow: 4px 4px 4px grey;

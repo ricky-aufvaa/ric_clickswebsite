@@ -46,7 +46,7 @@ body{
 
 }
 .myphoto h2{
-    margin-left: 10vh;
+    
 }
 
 .opencontainer img{
@@ -60,7 +60,7 @@ body{
 }
 .opencontainer h2{
     font-size: medium;
-    margin-left: 0;
+    /* margin-left: 0; */
     text-align: center;
     
 }
@@ -77,11 +77,14 @@ body{
 .openpanel{
     height: 60vh;
     width: 80vw;
-    overflow: scroll;
+    /* overflow: ; */
 }
 
 .openphoto img{
     margin: 1rem;
     
+}
+.openphoto a{
+    margin-top: 50vh;
     
 }
